@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Fun WE Charity Trivia</title>
+    <link rel="stylesheet"
+    <link href = "styling.css">
+</head>
+
+<h1 style="color:blue">Find your location with our survey</h1>
+<h2 style="color:blue">Please select the nearest intersection to you</h2>
+
+<body style = "background: url(https://i.ytimg.com/vi/A1MPiFf0gfo/maxresdefault.jpg)">
+
+<body>
+<p style="color: blue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Which intersection listed is the closest to you?</p>
+
+
+<input type = "radio" id = "goremeadows" name = charitycreation>               The Gore Road and Castlemore Road<br>
+<input type = "radio" id = "earnscliffe" name = charitycreation class = firstquestion>           Torbram Road and Clarke Blvd<br>
+<input type = "radio" id = "professor" class = firstquestion name = charitycreation>             West of Torbram Road and North of North Park Drive<br>
+<input type = "radio" id = "terrymiller" class = firstquestion name = charitycreation>           South-west corner of Williams Parkway East and Bramalea Road<br>
+<input type = "radio" id = "greenbriar" class = firstquestion name = charitycreation>           Bramalea Road and Central Park Drive<br>
+
+
+<input type = "submit" value = "Submit" name = "submit" onclick ="result()">
+
+
+<script language="javascript">
+    function result() {
+        if(document.getElementById('goremeadows').checked)
+        {   alert("You should attend any event at the Gore Meadows Community Centre and Library.");
+        }
+        if(document.getElementById('earnscliffe').checked)
+        {   alert("You should attend any event at the Earnscliffe Recreation Centre.");
+        }
+        if(document.getElementById('professor').checked)
+        {   alert("You should attend any event at the Professor's Lake Recreation Centre.");
+        }
+        if(document.getElementById('terrymiller').checked)
+        {   alert("You should attend any event at the Terry Miller Recreation Centre.");
+        }
+        if(document.getElementById('greenbriar').checked)
+        {   alert("You should attend any event at the Greenbriar Recreation Centre.");
+        }
+        else
+        {   alert("Please pick an intersection. Contact us at aleezacan42@gmail.com if no intersection is close to you, and we'll try our best to accomodate you in our next event.");
+        }
+}   
+
+</script>
+
+<button class = "lastsurveybutton">
+    <p1><a href = "lastsurvey.html">Next Survey Question</a></p1>
+</button>
+
+
